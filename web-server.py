@@ -30,7 +30,7 @@ class MyServer(BaseHTTPRequestHandler):
         return parsed
 
     def iperf_runner(self, params_dict):
-        os.system(f"iperf3 -c 213.87.200.65 -p 63400 {params_dict['directionArgv']} -b {params_dict['trafficValueArgv']} -t {params_dict['trafficTimerArgv']} > iperf-log")
+        os.system(f"iperf3 -c 213.87.200.65 -p 63400 {params_dict['directionArgv']} -b {params_dict['trafficValueArgv']} -t {params_dict['trafficTimerArgv']} > iperf-log.html")
 
     def do_GET(self):
         print("GET request, path:", self.path)

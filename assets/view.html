@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>iperf-web</title>
         
         <!-- jQuery -->
@@ -19,7 +20,7 @@
         <script src="javascript.js"></script>
     </head>
     <body>
-        <div class="container col-6">
+        <div class="container-fluid col-10">
             <h1 class="mb-3">iPerf3-web | Генератор трафика</h1>
             <h4 class="mb-3">Устройство Raspberry №</h4>
             <form method="post" id="form-param">
@@ -27,13 +28,13 @@
                     <div class="p-2 bg-light border">
                         <div class="form-group" id="LimitField">
                             <label for="formTrafficValue">Объём трафика, Мбит/с</label>
-                            <input type="number" name="formTrafficValue" class="form-control" id="formTrafficValue" placeholder="Оставьте поле пустым для запуска без ограничения">
+                            <input type="number" name="formTrafficValue" class="form-control" id="formTrafficValue" placeholder="Без ограничений - оставьте поле пустым">
                         </div>
                     </div>
                     <div class="p-2 bg-light border">
                         <div class="form-group d-flex align-items-start flex-column">
                             <label for="formTrafficTimer">Таймер, мин</label>
-                            <input type="number" name="formTrafficTimer" class="form-control" id="formTrafficTimer" placeholder="Оставьте поле пустым для запуска без ограничения">
+                            <input type="number" name="formTrafficTimer" class="form-control" id="formTrafficTimer" placeholder="Без ограничений - оставьте поле пустым">
                         </div>
                     </div>
                     <div class="p-2 bg-light border">
