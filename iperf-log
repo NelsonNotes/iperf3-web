@@ -1,9 +1,0 @@
-Connecting to host 213.87.200.65, port 63400
-[  5] local 185.193.143.115 port 40030 connected to 213.87.200.65 port 63400
-[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
-[  5]   0.00-1.00   sec  8.63 MBytes  72.4 Mbits/sec    3    206 KBytes       
-[  5]   1.00-1.88   sec  7.75 MBytes  74.3 Mbits/sec    1    167 KBytes       
-- - - - - - - - - - - - - - - - - - - - - - - - -
-[ ID] Interval           Transfer     Bitrate         Retr
-[  5]   0.00-1.88   sec  16.4 MBytes  73.3 Mbits/sec    4             sender
-[  5]   0.00-1.88   sec  0.00 Bytes  0.00 bits/sec                  receiver

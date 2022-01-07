@@ -45,10 +45,18 @@ async function check_iperf() {
     console.log(json_response);
     if (json_response.answer == '') {
       document.getElementById("startButton").removeAttribute("disabled")
+      document.getElementById("startButton").classList.remove('btn-outline-secondary');
+      document.getElementById("startButton").classList.add('btn-secondary');
       document.getElementById("stopButton").setAttribute("disabled", "")
+      document.getElementById("stopButton").classList.remove('btn-danger');
+      document.getElementById("stopButton").classList.add('btn-outline-danger');
     } else {
       document.getElementById("stopButton").removeAttribute("disabled")
+      document.getElementById("stopButton").classList.remove('btn-outline-danger');
+      document.getElementById("stopButton").classList.add('btn-danger');
       document.getElementById("startButton").setAttribute("disabled", "")
+      document.getElementById("startButton").classList.remove('btn-secondary');
+      document.getElementById("startButton").classList.add('btn-outline-secondary');
     }
   } else {
     throw new HttpError(response);

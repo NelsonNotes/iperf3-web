@@ -39,11 +39,11 @@
                     <div class="p-2 bg-light border">
                         <div class="form-group d-flex align-items-start flex-column">
                             <label for="buttonDirection">Направление трафика</label>
-                            <input type="checkbox" name="buttonDirection" id="buttonDirection" data-toggle="toggle" data-on="к клиенту" data-off="к серверу" data-onstyle="success" data-offstyle="success">
+                            <input type="checkbox" name="buttonDirection" id="buttonDirection" data-toggle="toggle" data-on="входящий" data-off="исходящий" data-onstyle="secondary" data-offstyle="secondary">
                         </div>
                     </div>
-                    <button id="startButton" class="btn btn-success" onclick="start_iperf(); return false">Запустить</button>
-                    <button id="stopButton" class="btn btn-danger" onclick="stop_iperf(); return false">Остановить</button>
+                    <button id="startButton" class="btn btn-secondary" onclick="start_iperf(); return false" disabled>Запустить</button>
+                    <button id="stopButton" class="btn btn-danger" onclick="stop_iperf(); return false" disabled>Остановить</button>
                   </div>
               </form>
         </div>
